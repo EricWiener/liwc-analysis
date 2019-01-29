@@ -3,7 +3,7 @@ from collections import defaultdict # used to create a dictionary of lists
 # recieve a list of transcripts in string form
 # recieve the LIWC2015
 # returns dictionary of category and the words that matched
-def liwcAnalysis(strIn, LIWCwords, LIWCroots):
+def liwc_analysis(strIn, LIWCwords, LIWCroots):
     # of the form
     # {
     #     "RELIGION": ["allah", "agnost"],
@@ -33,7 +33,7 @@ def liwcAnalysis(strIn, LIWCwords, LIWCroots):
 
 
 # return a dictionary with the category and the cooresponding count
-def getCounts(dictionaryResults):
+def get_counts(dictionaryResults):
     counts = {}
     for category in dictionaryResults:
         counts[category] = len(dictionaryResults[category])
@@ -45,7 +45,7 @@ def getCounts(dictionaryResults):
 # loads transcripts from file
 # loads LIWC2015 from file
 # strs is a list of the string representations of the transcripts
-def liwcAnalysisDriver(strs, LIWCLocation):
+def liwc_analysis_driver(strs, LIWCLocation):
     LIWCwords = defaultdict(list)
     LIWCroots = defaultdict(list)
 
@@ -74,7 +74,7 @@ def liwcAnalysisDriver(strs, LIWCLocation):
     # }
     resultsDics = []
     for str in strs:
-        resultsDics.append(liwcAnalysis(str, LIWCwords, LIWCroots))
+        resultsDics.append(liwc_analysis(str, LIWCwords, LIWCroots))
 
     # list of dictionarys containing the category and cooresponding count
     # {
@@ -82,7 +82,7 @@ def liwcAnalysisDriver(strs, LIWCLocation):
     # }
     countDics = []
     for dic in resultsDics:
-        countDics.append(getCounts(dic))
+        countDics.append(get_counts(dic))
 
     # print out counts
     # for index, dic in enumerate(countDics):
