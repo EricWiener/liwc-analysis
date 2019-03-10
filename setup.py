@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="liwc-analysis",
-    version="1.1.3",
+    version="1.1.5",
     author="Eric Wiener",
     author_email="ericwiener3@gmail.com",
     description="Driver for LIWC2015 analysis. LIWC2015 dictionary not included.",
@@ -16,6 +16,9 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+    ],
+    install_requires=[
+        'pandas',
     ],
     packages=["liwcanalysis"],
 )
