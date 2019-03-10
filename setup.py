@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="liwc-analysis",
-    version="1.1.5",
+    version="1.2.0",
     author="Eric Wiener",
     author_email="ericwiener3@gmail.com",
     description="Driver for LIWC2015 analysis. LIWC2015 dictionary not included.",

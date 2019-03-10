@@ -131,3 +131,5 @@ class liwc:
 
         pd.DataFrame(relative_freq_dics).T.reset_index().round(4).to_csv(
             output_dir + 'LIWCrelativefreq.csv', header=["Category"] + titles)
+
+        print("Output saved to " + output_dir)

@@ -72,97 +72,58 @@ LIWC.print(output_dir, list(transcript.keys()))
 ```
 Using print will return the following tables:
 /Path/to/my/file/LIWCcounts.csv:
-|               |          |          |
-|---------------|----------|----------|
+
 | Category      | Example1 | Example2 |
-| "ADJ          |          |          |
-| "             | 1        | 1        |
-| "ARTICLE      |          |          |
-| "             | 1        |          |
-| "AUXVERB      |          |          |
-| "             | 1        | 1        |
-| "FOCUSPRESENT |          |          |
-| "             | 1        | 1        |
-| "FUNCTION     |          |          |
-| "             | 2        | 2        |
-| "IPRON        |          |          |
-| "             |          | 1        |
-| "MALE         |          |          |
-| "             |          | 1        |
-| "NUMBER       |          |          |
-| "             | 1        | 1        |
-| "PRONOUN      |          |          |
-| "             |          | 1        |
-| "QUANT        |          |          |
-| "             | 1        | 2        |
-| "SOCIAL       |          |          |
-| "             |          | 1        |
-| "VERB         |          |          |
-| "             | 1        | 1        |
-| "WORK         |          |          |
-| "             | 1        | 1        |
+|---------------|----------|----------|
+| ADJ           | 1        | 1        |
+| ARTICLE       | 1        |          |
+| AUXVERB       | 1        | 1        |
+| FOCUSPRESENT  | 1        | 1        |
+| FUNCTION      | 2        | 2        |
+| IPRON         |          | 1        |
+| MALE          |          | 1        |
+| NUMBER        | 1        | 1        |
+| PRONOUN       |          | 1        |
+| QUANT         | 1        | 2        |
+| SOCIAL        |          | 1        |
+| VERB          | 1        | 1        |
+| WORK          | 1        | 1        |
 | TOTAL         | 8        | 8        |
 
 /Path/to/my/file/LIWCwords.csv:
-|               |                 |                       |
-|---------------|-----------------|-----------------------|
+
 | Category      | Example1        | Example2              |
-| "ADJ          |                 |                       |
-| "             | ['single']      | ['single']            |
-| "ARTICLE      |                 |                       |
-| "             | ['a']           |                       |
-| "AUXVERB      |                 |                       |
-| "             | ['is']          | ['is']                |
-| "FOCUSPRESENT |                 |                       |
-| "             | ['is']          | ['is']                |
-| "FUNCTION     |                 |                       |
-| "             | ['is', 'a']     | ['is', 'another']     |
-| "IPRON        |                 |                       |
-| "             |                 | ['another']           |
-| "MALE         |                 |                       |
-| "             |                 | ['boy']               |
-| "NUMBER       |                 |                       |
-| "             | ['single']      | ['single']            |
-| "PRONOUN      |                 |                       |
-| "             |                 | ['another']           |
-| "QUANT        |                 |                       |
-| "             | ['single']      | ['another', 'single'] |
-| "SOCIAL       |                 |                       |
-| "             |                 | ['boy']               |
-| "VERB         |                 |                       |
-| "             | ['is']          | ['is']                |
-| "WORK         |                 |                       |
-| "             | ['transcript.'] | ['transcript.']       |
+|---------------|-----------------|-----------------------|
+| ADJ           | ['single']      | ['single']            |
+| ARTICLE       | ['a']           |                       |
+| AUXVERB       | ['is']          | ['is']                |
+| FOCUSPRESENT  | ['is']          | ['is']                |
+| FUNCTION      | ['is', 'a']     | ['is', 'another']     |
+| IPRON         |                 | ['another']           |
+| MALE          |                 | ['boy']               |
+| NUMBER        | ['single']      | ['single']            |
+| PRONOUN       |                 | ['another']           |
+| QUANT         | ['single']      | ['another', 'single'] |
+| SOCIAL        |                 | ['boy']               |
+| VERB          | ['is']          | ['is']                |
+| WORK          | ['transcript.'] | ['transcript.']       |
 
 /Path/to/my/file/LIWCrelativefreq.csv
-|               |          |          |
-|---------------|----------|----------|
-| Category      | Example1 | Example2 |
-| "ADJ          |          |          |
-| "             | 0.125    | 0.125    |
-| "ARTICLE      |          |          |
-| "             | 0.125    |          |
-| "AUXVERB      |          |          |
-| "             | 0.125    | 0.125    |
-| "FOCUSPRESENT |          |          |
-| "             | 0.125    | 0.125    |
-| "FUNCTION     |          |          |
-| "             | 0.25     | 0.25     |
-| "IPRON        |          |          |
-| "             |          | 0.125    |
-| "MALE         |          |          |
-| "             |          | 0.125    |
-| "NUMBER       |          |          |
-| "             | 0.125    | 0.125    |
-| "PRONOUN      |          |          |
-| "             |          | 0.125    |
-| "QUANT        |          |          |
-| "             | 0.125    | 0.25     |
-| "SOCIAL       |          |          |
-| "             |          | 0.125    |
-| "VERB         |          |          |
-| "             | 0.125    | 0.125    |
-| "WORK         |          |          |
-| "             | 0.125    | 0.125    |
 
-Please let me know if you have any questions or features requests. Please feel free to open up a pull request, issue, or shoot me an email at ericwiener3@gmail.com. 
+| Category      | Example1 | Example2 |
+|---------------|----------|----------|
+| ADJ           | 0.125    | 0.125    |
+| ARTICLE       | 0.125    |          |
+| AUXVERB       | 0.125    | 0.125    |
+| FOCUSPRESENT  | 0.125    | 0.125    |
+| FUNCTION      | 0.25     | 0.25     |
+| IPRON         |          | 0.125    |
+| MALE          |          | 0.125    |
+| NUMBER        | 0.125    | 0.125    |
+| PRONOUN       |          | 0.125    |
+| QUANT         | 0.125    | 0.25     |
+| SOCIAL        |          | 0.125    |
+| VERB          | 0.125    | 0.125    |
+| WORK          | 0.125    | 0.125    |
+
+Please let me know if you have any questions or features requests. Please feel free to open up a pull request, issue, or shoot me an email at ericwiener3@gmail.com.
