@@ -13,19 +13,28 @@ LIWCLocation = "/Users/Eric/repositories/transcript-analysis/LIWC/LIWC.2015.all.
 LIWC = liwcanalysis.liwc(LIWCLocation)
 ```
 
-Then you can pass in a list of strings to analyze to receive a tuple of results dictionary and count dictionary
+Then you can pass in a list of strings to analyze to receive a tuple of results dictionary and count dictionary.
 ```python
 transcripts = {
     "Example1": "This is a single transcript. Red hat angry.",
     "Example2": "This is another single transcript. Dog boy cat.",
 }
 
-strs = []
+str_list = []
 for key in transcripts:
-    strs.append(transcripts[key])
+    str_list.append(transcripts[key])
 
-result_dics, count_dics = LIWC.analyze(strs)
+result_dics, count_dics = LIWC.analyze(str_list)
 ```
+
+Please note that `analyze()` can take either a single string argument or a list of strings. Example:
+```python
+# this is valid
+result_dics, coutn_dics = LIWC.analyze(["this is a string", "here is another", "one more"])
+# this is also valid
+result_dics, coutn_dics = LIWC.analyze("this is a string")
+```
+
 `result_dics` is a list of dictionaries. Each dictionary corresponds to one of the strings passed into `analyze`. Each dictionary follows the form of `"LIWC Category": [list, of, words, matched]`. For instance the dictionary for one string might look something like:
 ```
 {
@@ -50,6 +59,8 @@ LIWC.print(output_dir, titles)
 ```
 You need to specify the output directory, as well as a list of titles for each string. See the full example for more details.
 
+You can also retrieve an alphabetically sorted (A->Z) list of LIWC categories using `LIWC.get_categories()`.
+
 ## Full Example
 ```python
 import liwcanalysis
@@ -59,7 +70,7 @@ transcripts = {
     "Example2": "This is another single transcript. Dog boy cat.",
 }
 
-strs = []
+str_list = []
 for key in transcripts:
     strs.append(transcripts[key])
 
@@ -67,7 +78,7 @@ LIWCLocation = "/Users/Downloads/LIWC/LIWC.2015.all.txt"
 output_dir = "/Path/to/my/file/"
 
 LIWC = liwcanalysis.liwc(LIWCLocation)
-result_dics, count_dics = LIWC.analyze(strs)
+result_dics, count_dics = LIWC.analyze(str_list)
 LIWC.print(output_dir, list(transcript.keys()))
 ```
 Using print will return the following tables:
