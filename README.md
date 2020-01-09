@@ -72,13 +72,16 @@ Then, you can export the dictionary as a PDF. You can then convert the pdf table
 
 I’m assuming you will get a csv file of the form:
 
-> category, category1, category2
+```
+category, category1, category2
 word1, word2, word3,
 word4, word5, word6,
 word7, word8, word9,
+```
 
 Here is an excerpt from my dictionary so you know what the format should look like:
-> young ,ADJ
+```
+young ,ADJ
 younger ,ADJ
 youngest ,ADJ
 yummy ,ADJ
@@ -91,7 +94,7 @@ against ,PREPS
 ahead ,PREPS
 along ,PREPS
 among* ,PREPS
-
+```
 
 The * denotes that something is a root of a word. For instance, “among*" means thats “among" will be matched in “amongst”.
 
