@@ -137,4 +137,4 @@ Using print will return the following tables:
 | VERB          | 0.125    | 0.125    |
 | WORK          | 0.125    | 0.125    |
 
-Please let me know if you have any questions or features requests. Please feel free to open up a pull request, issue, or shoot me an email at ericwiener3@gmail.com.
+Please let me know if you have any questions or features requests. Please feel free to open up a pull request or issue.
