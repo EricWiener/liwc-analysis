@@ -66,39 +66,7 @@ You can also retrieve an alphabetically sorted (A->Z) list of LIWC categories us
 You need to supply this yourself. For legal reasons, I am unable to provide you with this.
 
 ### I don't have a LIWC2015.txt file. How do I create one?
-You will first need to buy access to LIWC from [here](https://liwc.wpengine.com/).
-
-Then, you can export the dictionary as a PDF. You can then convert the pdf table to csv with [tabula](https://tabula.technology/). I’ve used it in the past and it works very well. Once you download the table it should be pretty straightforward to convert it into the correct dictionary form.
-
-I’m assuming you will get a csv file of the form:
-
-```
-category, category1, category2
-word1, word2, word3,
-word4, word5, word6,
-word7, word8, word9,
-```
-
-Here is an excerpt from my dictionary so you know what the format should look like:
-```
-young ,ADJ
-younger ,ADJ
-youngest ,ADJ
-yummy ,ADJ
-about ,PREP
-above ,PREP
-abt ,PREP
-...
-after ,PREPS
-against ,PREPS
-ahead ,PREPS
-along ,PREPS
-among* ,PREPS
-```
-
-The * denotes that something is a root of a word. For instance, “among*" means thats “among" will be matched in “amongst”.
-
-Included in the repo is a file (`convert_liwc_pdf_to_txt_dict.py`) that with some modification (see the TODO’s) should convert the csv created by Tabula to the correct format. Make sure to edit the file and insert the correct file paths (see the TODO in the file).   
+You need to buy access to LIWC from [here](https://liwc.wpengine.com/). Due to a request from Receptiviti Inc., I am unable to provide instructions for how to create the `.txt` file.
 
 ## Full Example
 ```python
